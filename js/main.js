@@ -59,8 +59,8 @@ body.append(div1);
 // заднего фона body на значение
 // из этого инпута
 let inp = document.createElement("input");
-inp.placeholder = "Введите цвет";
-inp.addEventListener("keydown", (e) => {
+inp.type = "color";
+inp.addEventListener("change", (e) => {
   body.style.backgroundColor = inp.value;
 });
 body.append(inp);
